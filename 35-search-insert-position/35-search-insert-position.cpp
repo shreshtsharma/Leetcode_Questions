@@ -20,13 +20,14 @@ public:
                 left=mid+1;
             }
         }
-     if(nums[mid]<target)
-        {
-            return right+1;
-        }
-        else
-        {
-            return left;
-        }
+     // if(nums[mid]<target)
+     //    {
+     //        return right+1;
+     //    }
+     //    else
+     //    {
+     //        return left;
+     //    }
+        return left;
     }
 };
