@@ -1,8 +1,10 @@
 class Solution {
 public:
+    //using sliding window approach.
     int maxVowels(string s, int k) {
         int i=0,j=0;
         int max=0,count=0;
+        //traversing first window of size k
         for(j;j<k;j++)
         {
             if(s[j]=='a'||s[j]=='e'||s[j]=='i'||s[j]=='o'||s[j]=='u')
