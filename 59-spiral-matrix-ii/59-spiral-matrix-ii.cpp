@@ -1,44 +1,39 @@
 class Solution {
 public:
     vector<vector<int>> generateMatrix(int n) {
-        
-        
-        vector<vector<int>> spiral(n, vector<int>(n, 0));
-        int vis = 0;
-        int total = n*n;
-        int top = 0;
-        int bottom = n-1;
-        int left = 0;
-        int right = n -1;
-        while(vis < total){
-            
-            
-            for(int i = top, j=left; j<=right && vis<total; j++){
-                spiral[i][j] = vis+1;
-                vis++;
-            }
-            top++;
-            
-            for(int j = right, i=top; i<=bottom && vis<total; i++){
-                spiral[i][j]= vis+1;
-                vis++;
-            }
-            right--;
-            
-            for(int i=bottom, j = right; j>=left && vis<total; j--){
-                spiral[i][j] = vis+1;
-                vis++;
-            }
-            bottom--;
-            
-            for(int j =left, i =bottom; i>=top && vis<total; i--){
-                spiral[i][j] = vis+1;
-                vis++;
-                
-            }
-            left++;
+        vector<vector<int>> res(n, vector<int>(n));
+        int minr=0;
+        int minc=0;
+        int maxr=n-1;
+        int maxc=n-1;
+        int num=1;
+        while(num<=n*n){
+         //top wall
+            for(int i=minr,j=minc;j<=maxc && num<=n*n;j++)
+            {
+                res[i][j]=num;
+                num++;
+            }minr++;
+            //right wall
+            for(int i=minr,j=maxc;i<=maxr && num<=n*n;i++)
+            {
+                 res[i][j]=num;
+                num++;
+            }maxc--;
+            //bottom wall
+            for(int i=maxr,j=maxc;j>=minc && num<=n*n;j--)
+            {
+                res[i][j]=num;
+                num++;
+            }maxr--;
+            //left wall
+            for(int i=maxr,j=minc;i>=minr && num<=n*n;i--)
+            {
+             res[i][j]=num;
+                num++;
+            }minc++;
             
         }
-        return spiral;
+        return res;
     }
 };
