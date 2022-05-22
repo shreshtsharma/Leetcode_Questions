@@ -9,7 +9,7 @@ public:
             int a=i;
             int b=i+1;
             int c=i+2;
-            if(nums[a]+nums[b]>nums[c])
+            if(nums[a]+nums[b]>nums[c] )
             {
                 curper=nums[a]+nums[b]+nums[c];
                 if(maxper<curper)
