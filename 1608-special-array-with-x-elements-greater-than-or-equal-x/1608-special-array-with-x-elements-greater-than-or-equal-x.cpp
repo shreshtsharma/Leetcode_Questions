@@ -1,7 +1,6 @@
 class Solution {
 public:
    int specialArray(vector<int>& nums) {
-		// Brute force
         for(int i=1;i<1001;i++){
             int cnt=0;
             for(auto num: nums){
