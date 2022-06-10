@@ -1,22 +1,21 @@
 class Solution {
 public:
     int removePalindromeSub(string s) {
+        int count=0;
+        int fg=0;
         if(s.size()==0)
             return 0;
-        if(isPalindrome(s))
-            return 1;
-        else 
-            return 2;
-    }
-    bool isPalindrome(string s){
-        int i=0; 
-        int j=s.size()-1;
-        while(i<j){
-            if(s[i]!=s[j])
-                return false;
-            i++;
-            j--;
+        else {
+            for(int i=0,j=s.size()-1;i<=s.size()/2 && j>=s.size()/2;i++,j--)
+            {
+                if(s[i]!=s[j])
+                    fg=1;
+            }
+            if(fg==0)
+                return 1;
         }
-        return true;
+//
+        
+            return 2;
     }
 };
