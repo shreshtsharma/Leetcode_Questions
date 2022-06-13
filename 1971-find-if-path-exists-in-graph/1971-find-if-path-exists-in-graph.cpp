@@ -1,37 +1,26 @@
 class Solution {
 public:
-    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
-        //using bfs traversal;
-        if(source==destination)
+    bool dfs(vector<vector<int>>&adj, vector<int>&vis, int source, int destination){
+        bool ans = false;
+        vis[source] = 1;
+        if(source == destination)
             return true;
+        
+        for(auto v : adj[source]){
+            if(!vis[v]){
+                if(dfs(adj, vis, v, destination))
+                    return true;
+            }
+        }
+        return ans;
+    }
+    bool validPath(int n, vector<vector<int>>& edges, int source, int destination) {
         vector<vector<int>>adj(n);
-        for(int i=0;i<edges.size();i++)
-        {
+        for(int i=0;i<edges.size();i++){
             adj[edges[i][0]].push_back(edges[i][1]);
             adj[edges[i][1]].push_back(edges[i][0]);
         }
-        queue<int> q;
-        vector<int> vis(n,0);
-        q.push(source);
-        vis[source]=1;
-        while(!q.empty())
-        {
-            int cur=q.front();
-            q.pop();
-        
-            for(auto it:adj[cur])
-            {
-                if(vis[it]!=1)
-                {
-
-                    if(it==destination)
-                        return true;
-                    vis[it]=1;
-                    q.push(it);
-                }
-            }
-            
-        }
-        return false;
+        vector<int>vis(n, 0);
+        return dfs(adj, vis, source, destination);
     }
 };
