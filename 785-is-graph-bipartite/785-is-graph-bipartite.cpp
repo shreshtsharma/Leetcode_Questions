@@ -1,5 +1,6 @@
 class Solution {
 public:
+    //
     bool isBipartite(vector<vector<int>>& graph) {
         int v=graph.size();
         queue<int> q;
