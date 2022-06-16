@@ -7,37 +7,38 @@ class Solution {
 public:
 	bool isBipartite(int V, vector<int>adj[]){
 	    // Code here
-	    vector<int> vis(V,-1);
-	    queue<int> q;
-        for(int i=0;i<V;i++)
+	    vector<int> vis (V,-1);
+	    bool res;
+	    for(int i=0;i<V;i++)
+	    {
+	        if(vis[i]==-1){
+	            vis[i]=0;
+	        res=Check_Bipartite(i,adj,vis);
+            if(res==false)
+            return res;
+	        }
+	    }
+	    return true;
+	}
+    bool Check_Bipartite(int i,vector<int> adj[] ,vector<int> & vis)
+    {
+
+        for(auto it : adj[i])
         {
-            if(vis[i]==-1)
+            if(vis[it]==-1)
             {
-                q.push(i);
-                vis[i]=0;
-                while(!q.empty())
-                {
-                    int cur=q.front();
-                    q.pop();
-                    for(auto it: adj[cur])
-                    {
-                        if(vis[it]==-1)
-                        {
-                            q.push(it);
-                            if(vis[cur]==0)
-                            vis[it]=1;
-                            else
-                            vis[it]=0;
-                        }
-                        else if(vis[it]==vis[cur])
-                        return false;
-                    }
-                }
+                if(vis[i]==0)
+                vis[it]=1;
+                else
+                vis[it]=0;
+                if(Check_Bipartite(it,adj,vis)==false)
+                return false;
             }
+            else if(vis[i]==vis[it])
+            return false;
         }
         return true;
-	}
-
+    }
 };
 
 // { Driver Code Starts.
