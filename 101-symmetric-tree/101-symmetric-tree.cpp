@@ -42,6 +42,7 @@ public:
                     q.push(NULL);
                 }
                 if(cur->right)q.push(cur->right);
+                //
                 else
                 {
                     q.push(NULL);
