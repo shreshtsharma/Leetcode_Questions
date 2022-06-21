@@ -15,7 +15,7 @@ public:
             else
             st.push(s[i]);
         }
-        
+//         
         string str;
         int i=0;
         while(!st.empty())
