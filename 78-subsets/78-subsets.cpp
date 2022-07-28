@@ -1,21 +1,26 @@
 class Solution {
 public:
     vector<vector<int>> subsets(vector<int>& nums) {
-        vector<vector<int>> vec;
-        vector<int>temp;
-        permutations(nums,vec,temp,0);
-        return vec;
+        vector<vector<int>> res;
+        vector<int> temp;
+
+        solve(res,nums,temp);
+        return res;
     }
-   void  permutations(vector<int>&nums,vector<vector<int>>& vec,vector<int>&temp,int ind)
-   {
-       if(ind==nums.size())
-       {
-           vec.push_back(temp);
-           return;
-       }
-       temp.push_back(nums[ind]);
-       permutations(nums,vec,temp,ind+1);
-       temp.pop_back();
-       permutations(nums,vec,temp,ind+1);
-   }
+    void solve(vector<vector<int>> &res,vector<int> nums,vector<int> temp)
+    {
+        if(nums.size()==0)
+        {
+            res.push_back(temp);
+            return;
+        }
+        vector<int> op1=temp;
+        vector<int> op2=temp;
+        op2.push_back(nums[0]);
+        nums.erase(nums.begin() + 0);
+        solve(res,nums,op1);
+        solve(res,nums,op2);
+        
+        
+    }
 };
