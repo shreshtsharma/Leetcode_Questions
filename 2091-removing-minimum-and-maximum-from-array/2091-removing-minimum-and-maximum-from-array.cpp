@@ -18,7 +18,7 @@ public:
                 mini=i;
             }
         }
-        cout<<maxi<<mini<<endl;
+
         int one,two,three;
         if(mini>maxi)
         {
