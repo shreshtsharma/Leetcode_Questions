@@ -32,7 +32,7 @@ public:
             three=nums.size()-mini;
             two=mini+(nums.size()-maxi)+1;
         }
-        cout<<one<<" "<<two<<" "<<three;
+
         if(one<=two && one<=three)
         {
             return one;
