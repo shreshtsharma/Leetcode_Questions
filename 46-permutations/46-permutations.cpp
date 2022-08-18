@@ -12,6 +12,7 @@ public:
         if(ind==n)
         {
             res.push_back(arr);
+            return;
         }
         for(int i=ind;i<n;i++)
         {
