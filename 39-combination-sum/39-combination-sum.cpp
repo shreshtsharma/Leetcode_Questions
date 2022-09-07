@@ -1,13 +1,12 @@
 class Solution {
 public:
     vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
-        vector<vector<int>>vec;
-        vector<int>arr;
-        solve(0,vec,arr,candidates,target);
+        vector<vector<int>> vec;
+        vector<int> arr;
+        solve(vec,arr,candidates,target,0);
         return vec;
-        
     }
-    void solve(int ind,vector<vector<int>> &vec,vector<int> arr,vector<int> nums,int tar)
+    void solve(vector<vector<int>> &vec,vector<int> arr,vector<int> nums,int tar,int ind)
     {
         if(ind==nums.size())
         {
@@ -25,10 +24,9 @@ public:
         if(nums[ind]<=tar)
         {
             arr.push_back(nums[ind]);
-            solve(ind,vec,arr,nums,tar-nums[ind]);
+            solve(vec,arr,nums,tar-nums[ind],ind);
             arr.pop_back();
-
         }
-        solve(ind+1,vec,arr,nums,tar);
+        solve(vec,arr,nums,tar,ind+1);
     }
 };
