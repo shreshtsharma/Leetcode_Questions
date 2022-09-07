@@ -1,24 +1,22 @@
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
-        int n=nums.size();
-        vector<vector<int>> res;
-        solve(nums,n,res,0);
-        return res;
-
+        vector<vector<int>> vec;
+        solve(vec,nums,0);
+        return vec;
     }
-    void solve(vector<int> arr,int n,vector<vector<int>> &res,int ind)
+    void solve(vector<vector<int>> &vec,vector<int> nums,int ind)
     {
-        if(ind==n)
+        if(ind==nums.size())
         {
-            res.push_back(arr);
+            vec.push_back(nums);
             return;
         }
-        for(int i=ind;i<n;i++)
+        for(int i=ind;i<nums.size();i++)
         {
-            swap(arr[i],arr[ind]);
-            solve(arr,n,res,ind+1);
-            swap(arr[i],arr[ind]);
+            swap(nums[i],nums[ind]);
+            solve(vec,nums,ind+1);
+            swap(nums[i],nums[ind]);
         }
     }
 };
