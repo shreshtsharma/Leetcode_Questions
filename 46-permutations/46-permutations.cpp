@@ -1,22 +1,33 @@
 class Solution {
 public:
     vector<vector<int>> permute(vector<int>& nums) {
+         //not optimized approach
+        vector<int> arr;
         vector<vector<int>> vec;
-        solve(vec,nums,0);
+        int freq[nums.size()];
+        for(int i=0;i<nums.size();i++)
+        {
+            freq[i]=0;
+        }
+        solve(nums,arr,vec,freq,0);
         return vec;
     }
-    void solve(vector<vector<int>> &vec,vector<int> nums,int ind)
+    void solve(vector<int> nums,vector<int> arr,vector<vector<int>> &vec,int freq[],int ind )
     {
-        if(ind==nums.size())
+        if(arr.size()==nums.size())
         {
-            vec.push_back(nums);
+            vec.push_back(arr);
             return;
         }
-        for(int i=ind;i<nums.size();i++)
+        for(int i=0;i<nums.size();i++)
         {
-            swap(nums[i],nums[ind]);
-            solve(vec,nums,ind+1);
-            swap(nums[i],nums[ind]);
+            if(freq[i]==0){
+                arr.push_back(nums[i]);
+                freq[i]=1;
+                solve(nums,arr,vec,freq,ind+1);
+                arr.pop_back();
+                freq[i]=0;
+            }
         }
     }
 };
