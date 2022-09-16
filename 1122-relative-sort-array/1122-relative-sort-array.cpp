@@ -1,19 +1,28 @@
 class Solution {
 public:
     vector<int> relativeSortArray(vector<int>& arr1, vector<int>& arr2) {
-        int s=0;
+     map<int,int> mp;
+        vector<int> vec;
+        for(int i=0;i<arr1.size();i++)
+        {
+            mp[arr1[i]]++;
+        }
         for(int i=0;i<arr2.size();i++)
         {
-            for(int j=0;j<arr1.size();j++)
+            while(mp[arr2[i]]>0)
             {
-                if(arr1[j]==arr2[i])
-                {
-                    swap(arr1[s],arr1[j]);
-                    s++;
-                }
+                vec.push_back(arr2[i]);
+                mp[arr2[i]]--;
             }
         }
-        sort(arr1.begin()+s,arr1.end());
-        return arr1;
+        for(auto i:mp)
+        {
+            while(i.second>0)
+            {
+                vec.push_back(i.first);
+                i.second--;
+            }
+        }
+        return vec;
     }
 };
