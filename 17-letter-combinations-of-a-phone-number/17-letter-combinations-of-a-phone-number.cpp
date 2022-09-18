@@ -20,7 +20,7 @@ public:
         return vec;
 
     }
-    void solve(unordered_map<char,string> mp,vector<string> & vec,string digits,string str,int ind)
+    void solve(unordered_map<char,string> &mp,vector<string> & vec,string &digits,string &str,int ind)
     {
         if(str.size()>=digits.size())
         {
