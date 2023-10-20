@@ -50,7 +50,6 @@ public:
                 q.pop();
             }
         }
-        cout<<str;
         return str;
         
     }
