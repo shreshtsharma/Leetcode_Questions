@@ -11,64 +11,38 @@
  */
 class Solution {
 public:
-    vector<int> findMode(TreeNode* root) {
-        vector<int>vec,res;
-        if(!root)
-        return res;
-        inorder(root,vec);
-        int cnt=1,maxi=1;
-        for(int i=1;i<vec.size();i++)
-        {
-            if(vec[i]==vec[i-1])
-            {
-                cnt++;
-            }
-            else
-            {
-                if(cnt>maxi)
-                {
-                    maxi=cnt;
-                    res.clear();
-                    res.push_back(vec[i-1]);
-                    cnt=1;
-                }
-                else if(cnt==maxi)
-                {
-                    res.push_back(vec[i-1]);
-                    cnt=1;
-                }
-                else
-                cnt=1;
-            }
-
-        }
-        int n=vec.size();
-        if(cnt>maxi)
-                {
-                    maxi=cnt;
-                    res.clear();
-                    res.push_back(vec[n-1]);
-                    cnt=1;
-                }
-                else if(cnt==maxi)
-                {
-                    res.push_back(vec[n-1]);
-                    cnt=1;
-                }
-                else
-                cnt=1;
-
-            return res;
-
-    }
-    void inorder(TreeNode* root,vector<int> &vec)
+int cnt=0,maxcnt=0,val=INT_MIN;
+vector<int> res;
+void inorder(TreeNode* root)
+{
+    if(!root)
+    return ;
+    inorder(root->left);
+    if(val==root->val)
     {
-        if(!root)
-        {
-            return;
-        }
-        inorder(root->left,vec);
-        vec.push_back(root->val);
-        inorder(root->right,vec);
+        cnt++;
     }
+    else
+    {
+        val=root->val;
+        cnt=1;
+    }
+    if(cnt>maxcnt)
+    {
+        res.clear();
+        res.push_back(val);
+        maxcnt=cnt;
+    }
+    else if(cnt==maxcnt)
+    {
+        res.push_back(val);
+    }
+    inorder(root->right);
+}
+    vector<int> findMode(TreeNode* root) {
+        // without using extra space
+        inorder(root);
+        return res;
+    }
+
 };
