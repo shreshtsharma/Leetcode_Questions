@@ -6,6 +6,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0053-maximum-subarray) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 # Divide and Conquer
 |  |
 | ------- |
@@ -14,3 +15,4 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0053-maximum-subarray) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0121-best-time-to-buy-and-sell-stock) |
