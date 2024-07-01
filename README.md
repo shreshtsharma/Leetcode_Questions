@@ -36,3 +36,10 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0206-reverse-linked-list) |
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Array
+|  |
+| ------- |
+| [1293-three-consecutive-odds](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/1293-three-consecutive-odds) |
+<!---LeetCode Topics End-->
