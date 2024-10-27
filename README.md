@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0088-merge-sorted-array) |
 | [1293-three-consecutive-odds](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/1293-three-consecutive-odds) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2163-kth-distinct-string-in-an-array) |
@@ -85,6 +86,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0026-remove-duplicates-from-sorted-array) |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0088-merge-sorted-array) |
 ## Sorting
 |  |
