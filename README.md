@@ -58,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0392-is-subsequence](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0392-is-subsequence) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2232-adding-spaces-to-a-string](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2232-adding-spaces-to-a-string) |
 ## Counting
@@ -95,6 +96,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0026-remove-duplicates-from-sorted-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0088-merge-sorted-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0088-merge-sorted-array) |
+| [0392-is-subsequence](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0392-is-subsequence) |
 | [2232-adding-spaces-to-a-string](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2232-adding-spaces-to-a-string) |
 ## Sorting
 |  |
@@ -113,4 +115,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2232-adding-spaces-to-a-string](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2232-adding-spaces-to-a-string) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0392-is-subsequence](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0392-is-subsequence) |
 <!---LeetCode Topics End-->
