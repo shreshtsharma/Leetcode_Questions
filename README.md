@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0001-two-sum) |
 | [0011-container-with-most-water](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0015-3sum) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0026-remove-duplicates-from-sorted-array) |
@@ -55,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0001-two-sum) |
 | [0169-majority-element](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0169-majority-element) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
