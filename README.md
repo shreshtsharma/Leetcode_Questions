@@ -54,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2163-kth-distinct-string-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2163-kth-distinct-string-in-an-array) |
 | [2232-adding-spaces-to-a-string](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2232-adding-spaces-to-a-string) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 ## Hash Table
 |  |
 | ------- |
@@ -136,4 +137,9 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0011-container-with-most-water) |
+| [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
+## Enumeration
+|  |
+| ------- |
+| [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 <!---LeetCode Topics End-->
