@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0128-longest-consecutive-sequence](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0128-longest-consecutive-sequence) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0169-majority-element](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0169-majority-element) |
+| [0228-summary-ranges](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0228-summary-ranges) |
 | [1293-three-consecutive-odds](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/1293-three-consecutive-odds) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/1510-find-lucky-integer-in-an-array) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2163-kth-distinct-string-in-an-array) |
