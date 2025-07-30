@@ -63,6 +63,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0001-two-sum) |
 | [0128-longest-consecutive-sequence](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0128-longest-consecutive-sequence) |
+| [0138-copy-list-with-random-pointer](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0138-copy-list-with-random-pointer) |
 | [0169-majority-element](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0169-majority-element) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/1510-find-lucky-integer-in-an-array) |
 | [2163-kth-distinct-string-in-an-array](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/2163-kth-distinct-string-in-an-array) |
@@ -155,6 +156,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0021-merge-two-sorted-lists) |
+| [0138-copy-list-with-random-pointer](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0138-copy-list-with-random-pointer) |
 ## Recursion
 |  |
 | ------- |
