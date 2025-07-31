@@ -157,8 +157,10 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0021-merge-two-sorted-lists) |
 | [0138-copy-list-with-random-pointer](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0138-copy-list-with-random-pointer) |
+| [0206-reverse-linked-list](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0206-reverse-linked-list) |
 ## Recursion
 |  |
 | ------- |
 | [0021-merge-two-sorted-lists](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0021-merge-two-sorted-lists) |
+| [0206-reverse-linked-list](https://github.com/shreshtsharma/Leetcode_Questions/tree/master/0206-reverse-linked-list) |
 <!---LeetCode Topics End-->
